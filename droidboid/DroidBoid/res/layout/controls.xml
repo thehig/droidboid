@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scroller" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:fillViewport="true">
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:stretchColumns="1"
+		android:padding="5px">
+
+		<TextView android:text="Rule 1 - Flock Together"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="35dp" android:id="@+id/rule1Text"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/ControlRule1Slider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Rule 2 - Stay Away From Neighbors"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/rule2Text"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/ControlRule2Slider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+
+		<TextView android:text="Rule 3 - Match Velocity"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/rule3Text"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/ControlRule3Slider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Rule 4 - Follow Touch Events"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/rule4Text"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/ControlRule4Slider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Rule 6 - Follow Accelerometer"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/rule6Text"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/ControlRule6Slider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Flock Size" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:id="@+id/flockText" android:layout_height="match_parent"
+				android:text="0.0" android:layout_width="wrap_content"></TextView>
+			<SeekBar android:max="400" android:id="@+id/ControlFlockSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Const For Rule 1 - Central Pull Strength (Higher = Weaker)"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/centerPullText"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/centerPullSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView
+			android:text="Const For Rule 2 - Velocity Pull Strength (Higher = Weaker)"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/velocityPullText"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/velocityPullSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Const For Rule 4 - Target Pull Strength (Higher = Weaker)"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/targetPullText"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/targetPullSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+
+
+		<TextView android:text="Const: Bounce Absorbtion (0 = No Bounce)"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/bounceAbsorbtionText"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/bounceAbsorbtionSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Const: Minimum Distance (Set above 0)"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/minDistanceText"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/minDistanceSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<TextView android:text="Const: Maximum Velocity (Default 15)"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<TableRow>
+			<TextView android:layout_width="wrap_content" android:id="@+id/velocityLimiterText"
+				android:text="0.0" android:layout_height="match_parent" />
+			<SeekBar android:max="100" android:id="@+id/velocityLimiterSlider"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</TableRow>
+
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:onClick="UpdateClicked"
+			android:text="Update Variables" />
+
+	</TableLayout>
+
+
+</ScrollView>

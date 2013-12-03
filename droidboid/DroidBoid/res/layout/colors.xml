@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<TableLayout android:layout_height="match_parent"
+		android:id="@+id/tableLayout1" android:layout_width="fill_parent">
+		<TableRow>
+			<TextView android:text="Red" android:id="@+id/redTextView"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<Spinner android:id="@+id/redSpinner" android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:prompt="@string/color_prompt"></Spinner>
+			<EditText android:text="255" android:id="@+id/redEditText"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false" android:numeric="integer" android:maxLength="3"></EditText>
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Green" android:id="@+id/greenTextView"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<Spinner android:id="@+id/greenSpinner" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:prompt="@string/color_prompt"></Spinner>
+			<EditText android:text="255" android:id="@+id/greenEditText"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false" android:numeric="integer" android:maxLength="3"></EditText>
+
+		</TableRow>
+		<TableRow>
+			<TextView android:text="Blue" android:id="@+id/blueTextView"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<Spinner android:id="@+id/blueSpinner" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:prompt="@string/color_prompt"></Spinner>
+			<EditText android:text="255" android:id="@+id/blueEditText"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false" android:numeric="integer" android:maxLength="3"></EditText>
+		</TableRow>
+		
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:onClick="UpdateClicked"
+			android:text="Update Colors" />
+	</TableLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Run!</string>
+    <string name="app_name">DroidBoid</string>
+    <string name="color_prompt">Choose a color</string>
+</resources>
