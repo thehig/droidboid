@@ -67,7 +67,7 @@ public class Main extends GLSurfaceView implements Renderer {
 		gl.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE);		//Set The Blending Function For Translucency		
 
 		boidController = new Controller(num, screen_width, screen_height);
-		test.GenerateText(gl, "Herp Derp");
+		test.GenerateText(gl, "Brett Derp");
 		//Load the texture for the boids once during Surface creation		
 		//boidController.loadGLTexture(gl, this.context);			//Uncommenting this line reenables the texture
 	}
